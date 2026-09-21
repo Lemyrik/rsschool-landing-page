@@ -19,27 +19,30 @@
         </div>
         <nav class="header__nav">
           <ul class="nav__links">
-            <li><a href="#">Favorite coffee</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Mobile app</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="#favorite">Favorite coffee</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#mobile-app">Mobile app</a></li>
+            <li><a href="#footer">Contact us</a></li>
           </ul>
         </nav>
         <div class="theme-toggle">
-          <div class="theme-toggle__button">
+          <div class="theme-toggle__button active" data-theme="light">
             <img id="theme-toggle__sun" src="./img/Sun.svg" alt="Sun" />
           </div>
-          <div class="theme-toggle__button">
+          <div class="theme-toggle__button" data-theme="dark">
             <img id="theme-toggle__moon" src="./img/Moon.svg" alt="Moon" />
           </div>
         </div>
         <div class="menu">
-          <p id="menu-link">Menu</p>
+          <a href="./menu.html" id="menu-link">Menu</a>
           <img id="menu-cup" src="./img/coffee-cup.svg" alt="cup" />
+        </div>
+        <div class="header__menu">
+          <label class="burger" id="burger"></label>
         </div>
       </header>
       <main class="main">
-        <section class="hero">
+        <section class="hero" id="hero">
           <div class="hero__container">
             <h1 class="hero__title">
               <span>Enjoy</span> premium coffee at our charming cafe
@@ -50,10 +53,10 @@
               and those seeking a warm and inviting space to enjoy their
               favorite beverage.
             </p>
-            <a class="hero__button" href="#">Menu</a>
+            <a class="hero__button" href="./menu.html">Menu</a>
           </div>
         </section>
-        <section class="favorite">
+        <section id="favorite" class="favorite">
           <h2>Choose your <span>favorite</span> coffee</h2>
           <div class="slider">
             <div class="slider-button" id="slider-button-left">
@@ -107,7 +110,7 @@
             <hr class="slider__hr" />
           </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <h2>
             Resource is <span>the perfect and cozy place</span> where you can
             enjoy a variety of hot beverages, relax, catch up with friends, or
@@ -120,7 +123,7 @@
             <img class="about__img" src="./img/home/about-4.jpg" alt="" />
           </div>
         </section>
-        <section class="mobile-app">
+        <section class="mobile-app" id="mobile-app">
           <div class="mobile-app__container">
             <h2><span>Download</span> our app to start ordering</h2>
             <p>
@@ -147,7 +150,7 @@
           <img src="./img/home/mobile-screens.png" alt="" />
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <div class="footer__social">
           <h2 id="footer__title">
             Sip, Savor, Smile.<br /><span> It’s coffee time!</span>
@@ -186,5 +189,6 @@
         </div>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

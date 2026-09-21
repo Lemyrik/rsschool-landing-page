@@ -19,17 +19,17 @@
         </div>
         <nav class="header__nav">
           <ul class="nav__links">
-            <li><a href="#">Favorite coffee</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Mobile app</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="./index.html#favorite">Favorite coffee</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#mobile-app">Mobile app</a></li>
+            <li><a href="./index.html#footer">Contact us</a></li>
           </ul>
         </nav>
         <div class="theme-toggle">
-          <div class="theme-toggle__button">
+          <div class="theme-toggle__button active" data-theme="light">
             <img id="theme-toggle__sun" src="./img/Sun.svg" alt="Sun" />
           </div>
-          <div class="theme-toggle__button">
+          <div class="theme-toggle__button" data-theme="dark">
             <img id="theme-toggle__moon" src="./img/Moon.svg" alt="Moon" />
           </div>
         </div>
@@ -43,7 +43,7 @@
           Behind each of our cups hides an <span>amazing surprise</span>
         </h1>
         <div class="categories">
-          <div class="categories__category">
+          <div class="categories__category active">
             <div class="category__img">
               <img src="./img/menu/coffee.png" alt="coffee" />
             </div>
@@ -183,5 +183,6 @@
         </div>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
