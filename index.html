@@ -9,10 +9,36 @@
       href="./img/home/coffee-slider-2.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="https://cloudflare.com" />
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <div class="page">
-      <header></header>
+      <header class="header">
+        <div class="logo">
+          <img src="./img/logo.png" alt="logo" />
+        </div>
+        <nav class="header__nav">
+          <ul class="nav__links">
+            <li><a href="#">Favorite coffee</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Mobile app</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </nav>
+        <div class="theme-toggle">
+          <div class="theme-toggle__button">
+            <img id="theme-toggle__sun" src="./img/Sun.svg" alt="Sun" />
+          </div>
+          <div class="theme-toggle__button">
+            <img id="theme-toggle__moon" src="./img/Moon.svg" alt="Moon" />
+          </div>
+        </div>
+        <div class="menu">
+          <p id="menu-link">Menu</p>
+          <img id="menu-cup" src="./img/coffee-cup.svg" alt="cup" />
+        </div>
+      </header>
       <main>
         <section class="hero"></section>
         <section class="favorite"></section>
