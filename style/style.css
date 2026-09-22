@@ -509,6 +509,7 @@ h2 span {
 }
 .cards {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   gap: 38px;
@@ -543,4 +544,18 @@ h2 span {
 }
 .card__price {
   justify-self: flex-end;
+}
+.cards__button {
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px solid var(--text-color-primary);
+  color: var(--text-color-primary);
+  font-size: 20px;
+  width: 98px;
+  height: 46px;
+  border-radius: 23px;
+}
+.cards__button:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 7px var(--text-color-primary);
 }
