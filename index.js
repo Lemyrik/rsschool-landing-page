@@ -137,28 +137,30 @@ function goTo(index) {
   updateSlider();
 }
 
-btnRight.addEventListener("click", next);
-btnLeft.addEventListener("click", prev);
+btnRight?.addEventListener("click", next);
+btnLeft?.addEventListener("click", prev);
 
-renderSlides();
-updateSlider();
+sliderContent && renderSlides();
+sliderContent && updateSlider();
 
 let touchStartX = 0;
 
-sliderContent.addEventListener(
-  "touchstart",
-  (e) => {
-    touchStartX = e.touches[0].clientX;
-  },
-  { passive: true },
-);
+sliderContent &&
+  sliderContent.addEventListener(
+    "touchstart",
+    (e) => {
+      touchStartX = e.touches[0].clientX;
+    },
+    { passive: true },
+  );
 
-sliderContent.addEventListener(
-  "touchend",
-  (e) => {
-    const diff = touchStartX - e.changedTouches[0].clientX;
-    if (Math.abs(diff) < 50) return;
-    diff > 0 ? next() : prev();
-  },
-  { passive: true },
-);
+sliderContent &&
+  sliderContent.addEventListener(
+    "touchend",
+    (e) => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) < 50) return;
+      diff > 0 ? next() : prev();
+    },
+    { passive: true },
+  );
