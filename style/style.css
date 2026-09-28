@@ -8,8 +8,7 @@
 [data-theme="dark"] {
   --bg: #1a1a1a;
   --text-color-primary: #e1d4c9;
-  --border: #665f55 /*--toggle-bg: #333333;
-  --toggle-active: #555555;*/;
+  --border: #665f55;
 }
 html {
   scroll-behavior: smooth;
