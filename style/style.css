@@ -179,6 +179,35 @@ h2 span {
     bottom 0.3s 0.15s,
     transform 0.3s;
 }
+#burger.active::before {
+  top: 20px;
+  transform: rotate(-45deg);
+}
+#burger.active::after {
+  top: 20px;
+  transform: rotate(45deg);
+}
+.burger__links {
+  top: 64px;
+  right: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: calc(100vh - 64px);
+  gap: 60px;
+  z-index: 2;
+  background: var(--bg);
+  transform: translateX(100%);
+  transition: 0.5s;
+  font-size: 2rem;
+}
+.burger__links.active {
+  transform: translateX(0);
+  width: 100vw;
+}
 /******************************hero************************/
 .hero {
   display: flex;
@@ -586,4 +615,17 @@ h2 span {
 .cards__button:hover {
   cursor: pointer;
   box-shadow: 0 4px 7px var(--text-color-primary);
+}
+.card-ditails-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: rgba(24, 28, 41, 0.8);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+}
+.disable-scroll {
+  overflow: hidden;
 }
